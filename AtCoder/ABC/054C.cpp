@@ -30,28 +30,23 @@ vector<vector<int>> graph;
 void dfs(int v, vector<bool> & seen, int & res) {
 	bool end = true;
 	
-	cout << "se ha entrado con: " << v << "\n";
 	for (bool val : seen) {
 		cout << val << " ";
 	}
-	cout << "\nSe comienaza a recorrer";
 	
 	for (int i = 0 ; i < (int)seen.size() ; ++i) {
 		cout << seen[i] << " ";
 		if (!seen[i] && i != v) {
-			cout << "Entra en condicion\n";
 			end = false;
 		}
 	}
 	if (end) {
-		cout << "\naumenta ans\n";
 		++res;
 		return;
 	}
 	
 	seen[v] = true;
 	for (int val : graph[v]) {
-		cout << "recorriendo los valores de: " << v << ": " << val << "\n";
 		if (seen[val]) {
 			continue;
 		}
