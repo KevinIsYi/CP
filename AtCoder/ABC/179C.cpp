@@ -36,7 +36,6 @@ int main() {
 	cin >> n;
 	
 	for (int i = 1 ; i < n ; ++i) {
-		cout << "caben con i: " << i << " " << (n - 1) / i;
 		ans += ((n - 1) / i);
 	}
 	
