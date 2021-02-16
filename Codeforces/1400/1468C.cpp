@@ -63,10 +63,6 @@ int main() {
 			st.erase(st.begin());
 		}
 		
-		for (pair<int, int> pa : st) {
-			cout << pa.first << " : " << pa.second << "\n";
-		}
-		cout << endl;
 	}
 	
 	
