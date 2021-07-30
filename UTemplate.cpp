@@ -6,6 +6,8 @@ using namespace std;
 #define allr(x) x.rbegin(), x.rend()
 #define pb(x) push_back(x)
 
+#define ll long long
+
 #define sim template < class c
 #define ris return * this
 #define dor > debug & operator <<
